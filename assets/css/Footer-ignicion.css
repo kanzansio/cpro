@@ -1,0 +1,57 @@
+.row {
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  footer {
+    margin-top: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    margin-top: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    margin-top: 350px;
+    text-align: center;
+  }
+}
+
+#footerinfo {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+#ignicionlogo {
+  background-image: url("../../assets/img/Logo%20Ignicion%20TMb.png");
+  margin-top: -40px;
+  width: 59px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #1e1e1e;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,15 @@
+@media (min-width: 576px) {
+  #ignicionlogo {
+    position: relative;
+    right: 40%;
+  }
+}
+
+@media (min-width: 300px) {
+  #ignicionlogo {
+    margin-top: 5px;
+    position: relative;
+    right: 44%;
+  }
+}
+

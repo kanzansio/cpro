@@ -1,0 +1,23 @@
+#button1 {
+  margin-top: 30px;
+  background-color: rgba(228,174,14,0);
+  border-color: rgba(0,0,0,0);
+  font-size: 36px;
+}
+
+#button1:hover {
+  background-color: white;
+  color: #7b55d0;
+  border-color: white;
+}
+
+.hubspot {
+}
+
+.hotsuite {
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  margin-top: 5%;
+}
+

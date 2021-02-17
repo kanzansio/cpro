@@ -1,0 +1,140 @@
+
+a.container{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:150px;
+}
+
+
+a.botonDuolingo{
+    width:300px;
+    height: 20px;
+    border-radius: 16px;
+    background-color: #E4AE0F;
+    text-align:center;
+    padding:15px;
+    color: white;
+    text-decoration:none;
+    position:relative;
+
+  }
+  a.botonDuolingo:after{
+    content: "";
+    width:300px;
+    height: 24px;
+    border-radius: 16px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #2b520200;
+    padding:15px;
+    z-index:-1;
+  }
+  a.botonDuolingo:active{
+    bottom:-4px;
+    transition: 1s;
+  }
+  a.botonDuolingo:active:after{
+    height: 20px;
+  }
+  .c1{
+    width:300px;
+    height: 20px;
+    border-radius: 16px;
+    background-color: #3795C8;
+    text-align:center;
+    padding:15px;
+    color: white;
+    text-decoration:none;
+    position:relative;
+}
+  a.c1:after{
+    content: "";
+    width:300px;
+    height: 24px;
+    border-radius: 16px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #2b520200;
+    padding:15px;
+    z-index:-1;
+  }
+  a.c1:active{
+    bottom:-4px;
+    transition: 1s;
+  }
+  a.c1:active:after{
+    height: 20px;
+  }
+.c2{
+  width:300px;
+  height: 20px;
+  border-radius: 16px;
+  background-color: #E4AE0F;
+  text-align:center;
+  padding:15px;
+  color: white;
+  text-decoration:none;
+  position:relative;
+}
+a.c2:after{
+  content: "";
+  width:300px;
+  height: 24px;
+  border-radius: 16px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #2b520200;
+  padding:15px;
+  z-index:-1;
+}
+a.c2:active{
+  bottom:-4px;
+  transition: 1s;
+}
+a.c2:active:after{
+  height: 20px;
+}
+.c3{
+  width:300px;
+  height: 20px;
+  border-radius: 16px;
+  background-color: #E67023;
+  text-align:center;
+  padding:15px;
+  color: white;
+  text-decoration:none;
+  position:relative;
+}
+a.c3:after{
+  content: "";
+  width:300px;
+  height: 24px;
+  border-radius: 16px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #2b520200;
+  padding:15px;
+  z-index:-1;
+}
+a.c3:active{
+  bottom:-4px;
+  transition: 1s;
+}
+a.c3:active:after{
+  height: 20px;
+}
+.fuente{
+    color: #3795C8;
+    font-size: 24px
+    font;
+  }
