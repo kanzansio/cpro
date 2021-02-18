@@ -67,16 +67,15 @@ border: rgba(255, 255, 240, 0);
   background-color: #008F36;
   padding: 1em;
 }
-
-
+.jsx-3089265182{
+  display: none;
+}
   .border-1 {
     position: relative;
-
+    margin: auto;
     width: 450px;
     height: 280px;
     overflow: hidden;
-    margin-left: 10px;
-    position: relative;
 }
 .border-1 > .crop {
     position:absolute;
