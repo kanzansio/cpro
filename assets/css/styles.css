@@ -67,3 +67,25 @@ border: rgba(255, 255, 240, 0);
   background-color: #008F36;
   padding: 1em;
 }
+
+
+  .border-1 {
+    position: relative;
+
+    width: 450px;
+    height: 280px;
+    overflow: hidden;
+    margin-left: 10px;
+    position: relative;
+}
+.border-1 > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
