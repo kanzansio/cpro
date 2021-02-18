@@ -54,5 +54,16 @@ border: rgba(255, 255, 240, 0);
 
 .textos{
   color: #ffffff
-  
+}
+.carousel-inner{
+  height: 25em;
+  margin-top: 5em;
+}
+.carousel-inner img {
+  width: 100%;
+  margin: auto;
+}
+.verde{
+  background-color: #008F36;
+  padding: 1em;
 }
