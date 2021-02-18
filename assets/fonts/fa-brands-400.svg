@@ -13,6 +13,8 @@ Copyright (c) Font Awesome
 <defs>
 <font id="FontAwesome5Brands-Regular" horiz-adv-x="448" >
   <font-face 
+  
+    
     font-family="Font Awesome 5 Brands Regular"
     font-weight="400"
     font-stretch="normal"
@@ -24,6 +26,7 @@ Copyright (c) Font Awesome
     underline-thickness="25"
     underline-position="-50"
     unicode-range="U+0020-F949"
+   
   />
     <missing-glyph />
     <glyph glyph-name="twitter-square" unicode="&#xf081;" 
