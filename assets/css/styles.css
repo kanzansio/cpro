@@ -44,3 +44,15 @@ img {
   text-shadow: -5px 3px 1px #fff , -2px 2px 15px #fff;
 
 }
+
+.list-group-item{
+font-size:14px;
+background-color: #ffffff28;
+color: ivory;
+border: rgba(255, 255, 240, 0);
+}
+.carousel{
+  margin-top: 5%;
+  margin-left: 5%;
+  position: relative;
+  }
