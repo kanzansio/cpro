@@ -34,7 +34,8 @@ img {
 .centrado{
   align-self: center;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 11%;
+  height: 66%;
   width: 100%;
   text-align: center;
 }
@@ -55,7 +56,8 @@ border: rgba(255, 255, 240, 0);
 }
 
 .textos{
-  color: #ffffff
+  color: #ffffff;
+  font-size: 60px !important;
 }
 .carousel-inner{
   height: 25em;
