@@ -87,4 +87,9 @@ border: rgba(255, 255, 240, 0);
     min-height: 100%;
     min-width: 100%;
 }
-
+.hbspt-form{
+  overflow: hidden;
+}
+.hs-form-iframe{
+  margin:auto;
+}
