@@ -60,3 +60,7 @@ border: rgba(255, 255, 240, 0);
   width: 100%;
   margin: auto;
 }
+.verde{
+  background-color: #008F36;
+  padding: 1em;
+}
