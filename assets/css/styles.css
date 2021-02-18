@@ -105,8 +105,19 @@ border: rgba(255, 255, 240, 0);
   border-bottom: 40px solid transparent;
   border-left: 33px solid #e67026;
 }
+.flecha-arriba{
+    width: 0; 
+    height: 0; 
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 30px solid #e4ae0e;
+    position: absolute;
+    margin-left: 48%;
+    margin-top: -1.8em;
+}
 .card{
   height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0)
 }
 @media (min-width: 995px){
   .flecha{
