@@ -105,6 +105,9 @@ border: rgba(255, 255, 240, 0);
   border-bottom: 40px solid transparent;
   border-left: 33px solid #e67026;
 }
+.card{
+  height: 100%;
+}
 @media (min-width: 995px){
   .flecha{
     display: block;
