@@ -22,7 +22,7 @@
   }
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure,, header, hgroup, main, nav, section {
   background: #e67021;
   margin-top: 0px;
   max-height: 100%;
@@ -32,7 +32,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 @media (min-width: 576px) {
-  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  article, aside, figcaption, figure, header, hgroup, main, nav, section {
     background: #e67021;
     margin-top: 0px;
     max-height: 100%;
@@ -43,7 +43,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 @media (min-width: 300px) {
-  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  article, aside, figcaption, figure, header, hgroup, main, nav, section {
     background: #e67021;
     margin-top: 0px;
     max-height: 100%;
@@ -52,19 +52,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     height: 285PX;
   }
 }
-
-facebook-r {
-}
-
-facebook-r {
-}
-
-facebook-r {
-}
-
-facebook-r {
-}
-
 .facebook-r {
   position: relative;
   width: 100%;
