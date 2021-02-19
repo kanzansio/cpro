@@ -133,98 +133,6 @@ border: rgba(255, 255, 240, 0);
   }
 }
 
-
-.fontm{
-  color: #FFFFFF;
-  margin-bottom: 25px;
-  font-weight: 500;
-  font-size: 10px;
-  font-family: Tahoma,
-
-
-}
-
-.frontal-0{
-  z-index: 100;
-}
-
-
-.menu-item,
-
-
-
-.menu-open-button {
-   background: #6E2CA7;
-   border-radius: 100%;
-   top: 9%;
-   right: 9%;
-   width: 70px;
-   height: 70px;
-   margin-left: 40px;
-   position: fixed;
-   color: #FFFFFF;
-   text-align: center;
-   line-height: 80px;
-   -webkit-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
-   -webkit-transition: -webkit-transform ease-out 200ms;
-   transition: -webkit-transform ease-out 200ms;
-   transition: transform ease-out 200ms;
-   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
-}
-
-.menu-open {
-   display: none;
-}
-
-.lines {
-   width: 25px;
-   height: 3px;
-   background: #ffffff;
-   display: block;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   margin-left: -12.5px;
-   margin-top: -1.5px;
-   -webkit-transition: -webkit-transform 200ms;
-   transition: -webkit-transform 200ms;
-   transition: transform 200ms;
-   transition: transform 200ms, -webkit-transform 200ms;
-}
-
-.line-1 {
-   -webkit-transform: translate3d(0, -8px, 0);
-   transform: translate3d(0, -8px, 0);
-}
-
-.line-2 {
-   -webkit-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
-}
-
-.line-3 {
-   -webkit-transform: translate3d(0, 8px, 0);
-   transform: translate3d(0, 8px, 0);
-}
-
-.menu-open:checked + .menu-open-button .line-1 {
-   -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
-   transform: translate3d(0, 0, 0) rotate(45deg);
-}
-
-.menu-open:checked + .menu-open-button .line-2 {
-   -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
-   transform: translate3d(0, 0, 0) scale(0.1, 1);
-}
-
-.menu-open:checked + .menu-open-button .line-3 {
-   -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
-   transform: translate3d(0, 0, 0) rotate(-45deg);
-}
-
-
-
 .menu {
    margin: auto;
    position: absolute;
@@ -240,134 +148,187 @@ border: rgba(255, 255, 240, 0);
 
 
 
-/* .menu-item {
-   transition: all 0.1s ease 0s;
-} */
+/* .menu } */
+/*El fukin estilo de menu*/
+.nav {
+  position:fixed;
+  z-index: 50;
+  width:200px;
+  height:100vh;
+  top:0;
+  right:-220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+  padding-top:47px;
+  background-color:#3695C5;
+  border-left:4px solid rgba(0, 0, 0, 0.075);
+  transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+}
+   /*Estilos de los li del menú*/
+   .nav__item {
+     display:block;
+     margin-top: 5%;
+     margin-bottom: 5%;
+     width:96%;
+     margin:0 auto;
+     line-height:3;
+     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+     border-bottom:.5px solid rgba(59, 62, 61, 0);
+     border-top:.5px solid rgba(59, 62, 61, 0);
+     background-color:transparent;
+     font-family: 'Lato', sans-serif;
+     text-align:center;
+     color:rgba(221, 231, 228, 1);
+   }
+       /*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
+       .current:before {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute; /*Le damos al before una posición absoluta relativa al li que lo contiene*/
+          border-top:17px solid transparent;
+          border-left:15px solid #1D2120;
+          border-bottom:17px solid transparent;
+          top:0px;
+          right:-15px; /*Lo posicionamos -15px a la derecha de su contenedor*/
+          z-index:4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/
+       }
+      /*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
+      .current:after {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute;/*Le damos al after una posición absoluta relativa al li que lo contiene*/
+          border-top:16.5px solid transparent;
+          border-left:17px solid rgba(114, 126, 3, 1);
+          border-bottom:17px solid transparent;
+          top:.5px;
+          right:-21px;
+          z-index:1;  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
+      }
+  /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+  .menu-toogle {
+    
+    position:fixed; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+    width: 35px;
+    line-height:1.1;
+    text-align:center;
+    margin-top: 5.5%;
+    top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+    right: 8px;
+    border-radius:3px;
+    background-color: #6E2EAC;
+    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+    z-index:10;
+  }
+    /*Añadimos la haburguesa y le damos unos estilos*/
+    .menu-toogle::before {
+      content:"☰";
+      font-size:32px;
+      color:white;
+     
+    }
 
-.menu-item:hover {
-   background: #EEEEEE;
-   color: #ffffff;
-}
+/* Le damos unos estilos al contenedor principal*/
+.main-w {
+  width:100%;
+  height:100vh;
+  transition: all .5s ease;
+}   
+    .header-w figure {
+      width:100%;
+      height:150px;
+      text-align:center;
+      position:relative;
+    }
+        .header-w figure:before {
+          content:"O";
+          width:15px;
+          height:15px;
+          position:absolute;
+          background-color:white;
+          border-radius:100%;
+          color:#A9BC00;
+          font-size:120%;
+          
+          font-family:verdana;
+          left:42vw;
+          top:9vw;     
+        }
+        .header-w figure:after {
+          content:"O";
+          width:15px;
+          height:15px;
+          position:absolute;
+          background-color:white;
+          border-radius:100%;
+          color:#A9BC00;
+          font-size:120%;
+        
+          font-family:verdana;
+          left:50.8vw;
+          top:9vw; 
+        }
+    .featured-img {
+      margin:3em 6vw 0 0;
+      border:4px solid white;
+      border-radius:100%;
+    }
+    .header-w__description {
+      width:80%;
+      height:auto;
+      margin:0 auto;
+      padding:1em;
+      line-height:2;
+      text-align:center;
+      color:rgba(33, 36, 8, 1);
+    }
+        .header-w__title
+        {
+          font-size:300%;
+          font-family:Lobster;
+          margin:1em 0 0 0;
+        }
+        .header-w__title2 {
+          font-size:250%;
+          font-family:Lobster;
+          margin:0;
+        }
+    .paragraph {
+      width:80%;
+      margin:0 auto;
+      text-align:center;
+      font-family:'Source Sans Pro', sans-serif;
+    }
+
+    /*Estos son los estilos que le dan la funcionalidad al menú*/
+    /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+    .checkbox {
+      display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+    }
+    .checkbox:checked ~ .nav {
+      right:-5px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+      position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+    }
+    .checkbox:checked ~ .main-w {
+      margin-right:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+    }
+    .checkbox:checked ~ .menu-toogle { 
+      right:218px;
+      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+    }
+
+    .menu-boton{ 
+      background-color: #008F36;
+      width: 100%;
+      height: 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    
+    }
+
+/* .menu end} */
 
 
 
-.menu-open-button {
-   
-   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   -webkit-transition-duration: 400ms;
-   transition-duration: 400ms;
-   -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-   transform: scale(1.1, 1.1,) translate3d(0, 0, 0);
-   cursor: pointer;
-   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-}
-
-.menu-open-button:hover {
-   -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
-   transform: scale(1.2, 1.2) translate3d(0, 0, 0);
-}
-
-.menu-open:checked + .menu-open-button {
-   -webkit-transition-timing-function: linear;
-   transition-timing-function: linear;
-   -webkit-transition-duration: 200ms;
-   transition-duration: 200ms;
-   -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
-   transform: scale(0.8, 0.8) translate3d(0, 0, 0);
-}
-
-.menu-open:checked ~ .menu-item {
-   -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
-   transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
-}
-.menu-open:checked ~ .menu-item:nth-child(3) {
-  transition-duration: 180ms;
-  -webkit-transition-duration: 180ms;
-  -webkit-transform: translate3d( -70px,-0.08361px, 0);
-  transform: translate3d( -70px,-0.08361px,0);
-}
-
-.menu-open:checked ~ .menu-item:nth-child(4) {
-  transition-duration: 280ms;
-  -webkit-transition-duration: 280ms;
-  -webkit-transform: translate3d(-25px,70px, 0);
-  transform: translate3d(-25px,70px, 0);
-}
-
-.menu-open:checked ~ .menu-item:nth-child(5) {
-  transition-duration: 380ms;
-  -webkit-transition-duration: 380ms;
-  -webkit-transform: translate3d( 50px,60px,0);
-  transform: translate3d( 50px,60px,0);
-}
-.menu-open:checked ~ .menu-item:nth-child(6) {
-  transition-duration: 480ms;
-  -webkit-transition-duration: 480ms;
-  -webkit-transform: translate3d( -55px,-0px,0);
-  transform: translate3d( -55px,-80px,0);
-}
-.menu-open:checked ~ .menu-item:nth-child(7) {
-  transition-duration: 380ms;
-  -webkit-transition-duration: 380ms;
-  -webkit-transform: translate3d( 55px,60px,0);
-  transform: translate3d( 55px,-60px,0);
-
-}
-
-.blue {
-   background-color: #3996C8;
-   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.blue:hover {
-   color: #3996C8;
-   text-shadow: none;
-}
-
-.green {
-   background-color: #d6a103;
-   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.green:hover {
-   color: #E5AE0D;
-   text-shadow: none;
-}
-
-.red {
-   background-color: #E27027;
-   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.red:hover {
-   color: #FE4365;
-   text-shadow: none;
-}
-
-.amarillo {
-  background-color: #028E37;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.amarillo:hover {
-  color: #FE4365;
-  text-shadow: none;
-}
-.blog {
-  background-color: #6E2EAC;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.blog:hover {
-  color: #FE4365;
-  text-shadow: none;
-}
 
 .contra1
 {
@@ -573,3 +534,28 @@ margin-left: 5%;
   font-size: 14px;
   color: #878787;
 }
+
+#button1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(228,174,14,0);
+  border-color: rgba(0,0,0,0);
+  font-size: 36px;
+}
+
+#button1:hover {
+  background-color: white;
+  color: #7b55d0;
+  border-color: white;
+}
+
+
+
+.hotsuite {
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  margin-top: 5%;
+}
+
