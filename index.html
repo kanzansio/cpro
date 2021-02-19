@@ -37,7 +37,7 @@
 
 <body>
     <div>
-        <div class="container">
+        <div class="container page-section" id="1">
             <div class="row" style="background: #e4ae0e;">
                 <div class="col-7 col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-2 offset-sm-3 offset-md-4 offset-lg-4 offset-xl-5">
                     <img
@@ -83,22 +83,28 @@ title=Cpro-logo
                 <div class="col-md-6 col-xl-5 offset-xl-0 d-xl-flex justify-content-xl-end" style="padding-left: 0px;padding-right: 0px;">
                     <div class="row" style="min-width: 50%;max-width: 100%;">
                         <div class=" centrado" style="background: #3598c8;">
-                            <h1 class=textos style="color: rgb(255,255,255);font-size:65px;margin-top: 20px;margin-right:15% margin-left: 15%;">&nbsp;Aprueba tu &nbsp;EXANI II</h1> 
-                            <h1 class=textosi style="color: rgb(255,255,255);margin-top: 20px;margin-right:15% margin-left: 15%;">Garantizado*</h1>
+                            <h1 class="contra1">Aprueba tu EXANI II Garantizado*</h1>
+                    
                         </div>
                         <div class= "centrado" style="background: #e67026; z-index: -1;">
-                            <h2  style="color: rgb(255,255,255);font-size: 42px;margin-bottom: 20px;margin-right:30% margin-left: 30% margin-top: 50%;">¡Aquí te decimos cómo!<br></h2>
+                            <h2 class="contra2">¡Aquí te decimos cómo!</h2>
                             <div class="flecha"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-7" style="background: #e4ae0e; z-index: -2;"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/lsi8pEucja8" width="560" height="315" style="max-width: 100%;min-width: 100%; margin-top: 3em;"></iframe><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/cr_kA9Od-eQ" width="260" height="115" style="margin: 4%;min-width: 43%;max-width: 43%;"></iframe><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/cr_kA9Od-eQ" width="260" height="115" style="margin: 3%;min-width: 43%;max-width: 43%;"></iframe></div>
+                <div class="col-md-6 col-xl-7" style="background: #e4ae0e; z-index: -2;">
+                    <iframe class="framo" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/lsi8pEucja8" width="560" height="315"></iframe>
+                    <iframe class="framoa" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/cr_kA9Od-eQ" width="260" height="115"></iframe>
+                    <iframe class="framob" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/cr_kA9Od-eQ" width="260" height="115"></iframe>
+                </div>
             </div>
         </div>
     </div>
     <div>
         <div Id=Paquetes class="container">
+            <div class="container page-section" id="4">
             <div class="row">
+
                 <div class="col" style="height: 149px;background: #ffffff;">
                     <h5 class="text-center mb-5" id="Planes" style="color: #177c17;font-size: 33px;margin-top: 0px;margin-right: 0px;margin-left: 0px;"><br>Revisa los planes que tenemos para ti<br><br></h5>
                 </div>
@@ -157,7 +163,8 @@ title=Cpro-logo
             </div>
         </div>
     </div>
-    <ol Id=Nosotros class="carousel-indicators"></ol>
+    <div class="container page-section" id="3"></div>
+    <ol  class="carousel-indicators"></ol>
     <div>
         <div class="container">
             <div class="row">
@@ -231,7 +238,7 @@ height=auto
 <!-- end Css Carousel-->
 
 </div>
-<div class="col text-right" style="background: #e67022;">
+<div id=Nosotros class="col text-right" style="background: #e67022;">
 
 
     <h5 class="text-right mb-5" id="Quienes-somos" style="color: #ffffff;font-size: 33px;margin-top: 5%;margin-right: 5%;margin-left: 5%;margin-bottom: 5%;"><strong>¿Quiénes Somos?</strong><br></h5>
@@ -254,11 +261,13 @@ height=auto
     </div>
     <div>
         <div class="container">
+            
             <div class="row">
                 <div class="col-md-12" style="background: #3795c8;"><div claass=facebook->
     <script src="platform.js" defer></script>
 <div class="elfsight-app-01e7f070-a77c-4246-8102-0467edd20d65"></div>
 </div></div>
+<div class="container page-section" id="2"></div>
             </div>
         </div>
     </div>
@@ -326,9 +335,12 @@ height=auto/></div>
          <span class="lines line-2"></span>
          <span class="lines line-3"></span>
        </label>
-       <a href="#Paquetes" class="menu-item blue"> <i class="fontm">Paquetes</i> </a>
-       <a href="#Nosotros" class="menu-item green"> <i class="fontm">Nosotros</i> </a>
-       <a href="#Contáctanos" class="menu-item red"> <i class="fontm">Contáctanos</i></a>
+       
+       <a  class="menu-item blue" data-ref="#4"> <i class="fontm">Paquetes</i> </a>
+       <a  class="menu-item green" data-ref="#3"> <i class="fontm">Nosotros</i> </a>
+       <a  class="menu-item red" data-ref="#2"> <i class="fontm">Contáctanos</i></a>
+       <a  class="menu-item amarillo" data-ref="#1"> <i class="fontm">Inicio</i></a>
+       
     </nav>
 </div>
 
@@ -340,7 +352,7 @@ height=auto/></div>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/whatsapp.js"></script>
     <script src="assets/js/lazy-loading.js"></script>
-
+    <script src="assets/js/data.js"></script>
 </body>
 
 </html>
