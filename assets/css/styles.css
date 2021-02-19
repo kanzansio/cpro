@@ -334,39 +334,36 @@ border: rgba(255, 255, 240, 0);
 {
   color: rgb(255,255,255);
   font-size:60px;
-  margin-top: 1%;
+  margin-top: 10%;
   margin-right:1%;
    margin-left: 1%;
-   margin-bottom: 1%;
+   margin-bottom: 10%;
 }
 
 .contra2{
   color: rgb(255, 255, 255);
   font-size:40px;
-  margin-top: 1%;
+  margin-top: 10%;
   margin-right:1%;
    margin-left: 1%;
-   margin-bottom: 1%;
+   margin-bottom:10%;
 }
 .framo{
   margin-top: 1%;
-  margin-right:1%;
-   margin-left: 1%;
+  margin-right:5%;
+   margin-left: 5%;
    margin-bottom: 1%;
-   max-width: 100%;
-   min-width: 100%;
+   max-width: 92%;
    margin-top: 3em
 }
 .framoa{
 margin-bottom:5%;
-min-width:43%;
 max-width:43%;
 
 margin-left: 5%;
 }
 .framob{
   margin-bottom:5%;
-  min-width:43%;
   max-width: 43%;
   
 margin-left: 5%;
@@ -476,7 +473,7 @@ margin-left: 5%;
 }
 .footer-widget ul li {
   display: inline-block;
-  float: left;
+  
   width: 50%;
   margin-bottom: 12px;
 }
@@ -551,7 +548,6 @@ margin-left: 5%;
 }
 
 
-
 .hotsuite {
   position: relative;
   width: 100%;
@@ -559,3 +555,13 @@ margin-left: 5%;
   margin-top: 5%;
 }
 
+.conft{
+  background: #3598c8;
+
+}
+
+
+.confta{
+  background: #E67026;
+
+}
