@@ -2,8 +2,4 @@ User-agent: Googlebot - Google Search
 User-agent: Bingbot - Microsoft Bing & Yahoo
 User-agent: Baiduspider - Baidu, a leading Chinese search engine
 User-agent: * - Targets all web crawlers.
-Disallow: /graph.facebook.com/
-Disallow: /static.elfsight.com/
-Disallow: /https://static.elfsight.com/apps/facebook-reviews/release/5b03c028-86aa-4646-a270-9919d2da8c48/app/facebook-reviews.js/
-Disallow: /https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js/
 Sitemap:https://cpro.mx/sitemap.xml
