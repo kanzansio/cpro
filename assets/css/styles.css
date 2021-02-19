@@ -159,7 +159,7 @@ border: rgba(255, 255, 240, 0);
    width: 80px;
    height: 80px;
    margin-left: 40px;
-   position: absolute;
+   position: fixed;
    color: #FFFFFF;
    text-align: center;
    line-height: 80px;
