@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #6E2CA7;
+  background-color: #6E2EAC;
 }
 
 img {
@@ -32,6 +32,7 @@ img {
 }
 .height{
   height: 16em;
+  overflow: hidden;
 }
 .centrado{
   align-self: center;
@@ -82,7 +83,7 @@ border: rgba(255, 255, 240, 0);
   .border-1 {
     position: relative;
     margin: auto;
-    width: 100%;
+    width: 135%;
     height: 100%;
     overflow: hidden;
     z-index: -100;
@@ -120,7 +121,7 @@ border: rgba(255, 255, 240, 0);
     border-right: 28px solid transparent;
     border-bottom: 30px solid #e4ae0e;
     position: absolute;
-    margin-left: 48%;
+    margin-left: 38.5%;
     margin-top: -1.8em;
 }
 .card{
