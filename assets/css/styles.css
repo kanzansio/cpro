@@ -35,11 +35,9 @@ img {
   overflow: hidden;
 }
 .centrado{
-  align-self: center;
-  padding-top: 12%;
-  padding-bottom: 15%;
+
+  padding-bottom: 7.5%;
   width: 100%;
-  text-align: center;
 }
 .pa3 {
   font-size:20px;
