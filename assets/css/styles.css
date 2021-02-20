@@ -18,9 +18,8 @@ img {
   font-size: 50px;
   font-family: inherit;
   font-weight: 500;
+  -webkit-text-stroke: 1px #fff;
   color: #108F38;
-  text-shadow: -5px 3px 1px #fff , -2px 2px 15px #fff;
-
 }
 
 .pa2 {
@@ -43,8 +42,8 @@ img {
   font-size:20px;
   font-family: inherit;
   font-weight: 500;
-  color: #108F38;
-  text-shadow: -3px 1px 1px #fff, -2px 2px 15px #fff;
+  -webkit-text-stroke: .5px #fff;
+  color: #108F38
 
 }
 
@@ -212,7 +211,7 @@ border: rgba(255, 255, 240, 0);
     text-align:center;
     margin-top: 5.5%;
     top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
-    right: 8px;
+    right: 15%;
     border-radius:3px;
     background-color: #6E2EAC;
     transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
@@ -565,3 +564,13 @@ margin-left: 5%;
  ;
 
 }
+
+.margenew
+{
+margin-top: 5%;
+color:#fff;
+font-size: 30px;
+text-align: center;
+
+ }
+ 
