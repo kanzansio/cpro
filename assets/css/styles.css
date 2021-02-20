@@ -95,6 +95,7 @@ border: rgba(255, 255, 240, 0);
     min-height: 100%;
     min-width: 100%;
 }
+
 .hbspt-form{
   overflow: hidden;
 }
@@ -396,7 +397,7 @@ margin-left: 5%;
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: #ffffff;
   font-size: 15px;
 }
 .footer-content {
@@ -511,18 +512,18 @@ margin-left: 5%;
   color: #ffffff;
 }
 .copyright-text p a{
-  color: #ffffff;
+  color: #6E2EAC;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: #ff5e14;
+  color: #6E2EAC;
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: #ffffff;
 }
 
 #button1 {

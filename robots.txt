@@ -1,5 +1,9 @@
 User-agent: Googlebot - Google Search
 User-agent: Bingbot - Microsoft Bing & Yahoo
 User-agent: Baiduspider - Baidu, a leading Chinese search engine
+
 User-agent: * - Targets all web crawlers.
-Sitemap:https://cpro.mx/sitemap.xml
+Allow:/Sitemap:https://cpro.mx/sitemap.xml/
+
+User-agent: * - Targets all web crawlers.
+Disallow:  /"https://giphy.com/embed/5pLuxqnRTRq9rJIee7" /
