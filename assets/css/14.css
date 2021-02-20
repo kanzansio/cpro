@@ -20,13 +20,14 @@ ul.social-icons {
     text-decoration: none;
 }
 .fa-facebook {
+    color: #fff;
     padding:10px 14px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #6E2DAD;
+    background-color: #6d2dad00;
 }
 .fa-facebook:hover {
     background-color: #0d0ada;
@@ -56,13 +57,14 @@ ul.social-icons {
     background-color: #eb8231;
 }
 .fa-youtube {
+    color: #ffffff;
     padding:10px 14px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #6E2DAD;
+    background-color: #6d2dad00;
 }
 .fa-youtube:hover {
     background-color: #e64a41;
