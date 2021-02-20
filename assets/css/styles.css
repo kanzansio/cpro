@@ -27,12 +27,25 @@ img {
   font-family: inherit;
   font-weight: 500;
   color: #ffffff;
+  
+/*-estilos baner morado*/
 
 }
 .height{
-  height: 16em;
+  height: 30em; /*-esto cambia el tamaño del baner*/
   overflow: hidden;
 }
+
+.border-1 {
+  position: relative;
+  margin: auto;
+  width: 135%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+
+/*-estilos baner morado end*/
 
 .pa3 {
   font-size:20px;
@@ -72,24 +85,8 @@ border: rgba(255, 255, 240, 0);
 .jsx-3089265182{
   display: none;
 }
-  .border-1 {
-    position: relative;
-    margin: auto;
-    width: 135%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -100;
-}
-.border-1 > .crop {
-    position:absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
-}
+ 
+
 
 .hbspt-form{
   overflow: hidden;
@@ -547,6 +544,16 @@ margin-bottom: 2em;
   margin-top: 5%;
 }
 
+
+.bane{
+  position: relative;
+  margin: auto;
+  width: 135%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+
 .conft{
 
   padding-bottom: 7.5%;
@@ -575,6 +582,9 @@ margin-top: 5%;
 color:#fff;
 font-size: 30px;
 text-align: center;
+}
+ .ax{
 
+color:#028E37;
+margin-bottom: 5%;
  }
- 
