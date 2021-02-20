@@ -33,11 +33,7 @@ img {
   height: 16em;
   overflow: hidden;
 }
-.centrado{
 
-  padding-bottom: 7.5%;
-  width: 100%;
-}
 .pa3 {
   font-size:20px;
   font-family: inherit;
@@ -352,19 +348,19 @@ border: rgba(255, 255, 240, 0);
    margin-left: 5%;
    margin-bottom: 1%;
    max-width: 92%;
-   margin-top: 3em
+   margin-top: 2em
 }
 .framoa{
 margin-bottom:5%;
 max-width:43%;
-
 margin-left: 5%;
+margin-bottom: 2em;
 }
 .framob{
   margin-bottom:5%;
   max-width: 43%;
-  
 margin-left: 5%;
+margin-bottom: 2em;
   }
 
 /*footer*/
@@ -543,12 +539,15 @@ margin-left: 5%;
 
 .hotsuite {
   position: relative;
-  width: 100%;
+  width: auto;
   font-weight: 500;
   margin-top: 5%;
 }
 
 .conft{
+
+  padding-bottom: 7.5%;
+  width: auto;
   background: #3598c8;
 
 }
@@ -556,7 +555,9 @@ margin-left: 5%;
 
 .confta{
   background: #E67026;
-
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+    width: 100%;
 }
 
 .colora{
