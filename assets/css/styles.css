@@ -94,26 +94,7 @@ border: rgba(255, 255, 240, 0);
 .hs-form-iframe{
   margin:auto;
 }
-.flecha{
-  margin: -5em -2em 0 0;
-  position: absolute;
-  display: none;
-  right: 0;
-  z-index: 55;
-  border-top: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  border-left: 33px solid #e67026;
-}
-.flecha-arriba{
-    width: 0; 
-    height: 0; 
-    border-left: 28px solid transparent;
-    border-right: 28px solid transparent;
-    border-bottom: 30px solid #e4ae0e;
-    position: absolute;
-    margin-left: 38.5%;
-    margin-top: -1.8em;
-}
+
 .card{
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0)
@@ -334,10 +315,10 @@ border: rgba(255, 255, 240, 0);
 .contra2{
   color: rgb(255, 255, 255);
   font-size:40px;
-  margin-top: 10%;
+  margin-top: 2%;
   margin-right:1%;
    margin-left: 1%;
-   margin-bottom:10%;
+   margin-bottom:1%;
 }
 
 .centrado{
@@ -349,10 +330,6 @@ border: rgba(255, 255, 240, 0);
     font-size:50px;
   }
 }
-
-
-
-  
 
 
 /* texto de la primera seccion examen y videos */
@@ -380,6 +357,11 @@ margin-bottom: 2em;
 .ct1{
   color: rgba(255, 255, 255, 0.541);
 }
+
+  
+
+
+
 /*footer*/
   ul {
     margin: 0px;
