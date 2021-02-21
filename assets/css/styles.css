@@ -73,7 +73,6 @@ border: rgba(255, 255, 240, 0);
 }
 .carousel-inner{
   height: 25em;
-  margin-top: 5em;
 }
 .carousel-inner img {
   width: 100%;
