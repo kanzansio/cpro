@@ -41,9 +41,9 @@
                 margin:0 10px 0 0
             }.info-avatar:before{
                 content:'\f232';
-                    z-index:1;font-family:"Font Awesome 5 Brands";
-                    background:#23ab23;
-                    color:#fff;
+                    z-index:1;font-family:"Font Awesome 4.3.0";
+                    background:#23ab2300;
+                    color:rgba(255, 255, 255, 0);
                     padding:4px 4px;
                     border-radius:100%;
                     position:absolute;
