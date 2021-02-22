@@ -33,7 +33,7 @@ img {
 
 }
 .height{
-  height: 28em; /*-esto cambia el tamaño del baner*/
+  height: 27em; /*-esto cambia el tamaño del baner*/
   overflow: hidden;
   width:65%;
 }
