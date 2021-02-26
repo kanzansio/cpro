@@ -32,17 +32,18 @@ ul.social-icons {
 .fa-facebook:hover {
     background-color: #0d0ada;
 }
-.fa-twitter {
+.fa-instagram {
+    color: #ffffff;
     padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #7122A5;
+    background-color: #6d2dad00;
 }
-.fa-twitter:hover {
-    background-color: #00aced;
+.fa-instagram:hover {
+    background-color: #d30f9b;
 }
 .fa-rss {
     padding:10px 14px;
